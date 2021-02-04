@@ -14,13 +14,16 @@ public class App {
         System.out.println(f2);
 
         Calculadora calc = new Calculadora();
-        System.out.println(calc.suma(f1,f2));
+        System.out.println(calc.suma(f1, f2));
 
         MiUtil mu = new MiUtil();
-        System.out.println(mu.unNumero(7,20));
-        System.out.println(mu.unNumero(7,20));
-        System.out.println(mu.unNumero(7,20));
+        System.out.println(mu.unNumero(7, 20));
+        System.out.println(mu.unNumero(7, 20));
+        System.out.println(mu.unNumero(7, 20));
         System.out.println(mu.unSaludo(" Pedro "));
+
+        String dir = System.getProperty("user.dir");
+        System.out.println("Estás corriendo en " + dir);
 
     }
 }

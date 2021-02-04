@@ -6,6 +6,6 @@ public class MiUtil {
     }
 
     public String unSaludo(String s) {
-        return "Hola " + s.trim();
+        return "Hola '" + s.trim()+"'";
     }
 }
