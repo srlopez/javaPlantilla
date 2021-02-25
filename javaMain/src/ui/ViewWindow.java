@@ -12,15 +12,15 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class Window extends Application {
+public class ViewWindow extends Application {
     private static CtrlWindow ctrl; //Sólo funciona de esta manera.
 
-    public Window(){
+    public ViewWindow(){
         super();
     }
-    public Window(CtrlWindow ctrlw) {
+    public ViewWindow(CtrlWindow ctrlw) {
         this();
-        Window.ctrl = ctrlw;
+        ViewWindow.ctrl = ctrlw;
     }
 
 	public void show(String... arg0) {
@@ -85,7 +85,7 @@ public class Window extends Application {
         root.getChildren().add(btn);
         root.getChildren().add(fin);
         root.getChildren().add(res);
-        root.setStyle("-fx-font: 20 arial;");
+        root.setStyle("-fx-font: 19 arial;");
         primaryStage.setTitle("Sistema MVC");
         primaryStage.setOnCloseRequest(e -> Platform.exit());
         primaryStage.setScene(new Scene(root, 300, 250));

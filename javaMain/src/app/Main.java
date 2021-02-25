@@ -13,12 +13,12 @@ public class Main {
         // MVC en modo ventana
         System.out.println("MVC Window");
         CtrlWindow ctrlw = new CtrlWindow(sistema);
-        Window ventana = new Window(ctrlw);
-        ventana.show();
+        ViewWindow view = new ViewWindow(ctrlw);
+        view.show();
 
         // MVC en modo terminal
         System.out.println("MVC Consola");
-        Terminal viewTerminal = new Terminal();
+        ViewTerminal viewTerminal = new ViewTerminal();
         CtrlTerminal ctrlt = new CtrlTerminal(sistema, viewTerminal);
         ctrlt.run();
 

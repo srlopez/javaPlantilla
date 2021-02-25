@@ -5,7 +5,7 @@ import java.util.Scanner;
 import core.MiUtil;
 
 
-public class Terminal {
+public class ViewTerminal {
     Scanner input = new Scanner(System.in);
 
     String leerFraccionString() {
