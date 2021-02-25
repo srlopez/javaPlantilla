@@ -15,6 +15,7 @@ public class Calculadora {
 
     // Máximo Común Divisor
     int mcd(int x, int y) {
+        if(x==0) return 1;
         while (x != y)
             if (x > y)
                 x = x - y;
