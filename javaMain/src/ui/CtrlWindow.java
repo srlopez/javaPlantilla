@@ -1,7 +1,6 @@
 package ui;
 
-import app.Calculadora;
-import app.Fraccion;
+import calculos.*;
 
 public class CtrlWindow {
     private Calculadora sistema;

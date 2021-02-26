@@ -1,4 +1,4 @@
-package app;
+package calculos;
 
 public class Fraccion {
     public int numerador = 0;

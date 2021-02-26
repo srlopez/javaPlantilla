@@ -1,6 +1,6 @@
 package ui;
 
-import app.*;
+import calculos.*;
 
 public class CtrlTerminal {
     Calculadora sistema;

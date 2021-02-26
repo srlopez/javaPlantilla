@@ -1,8 +1,7 @@
 package ui;
-import app.Fraccion;
+import calculos.Fraccion;
 
 import java.util.Scanner;
-import core.MiUtil;
 
 
 public class ViewTerminal {
@@ -21,7 +20,6 @@ public class ViewTerminal {
 
     void mostrarResult(Fraccion result){
         //System.out.println(result);
-        MiUtil mu = new MiUtil();
-        System.out.println(mu.unSaludo(result.toString()));
+        System.out.println(result.toString());
     }
 }
