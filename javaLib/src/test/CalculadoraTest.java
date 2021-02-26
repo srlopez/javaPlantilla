@@ -3,7 +3,7 @@ package test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
 
-import calculos.*;
+import aritmetica.*;
 
 class CalculadoraTest {
 

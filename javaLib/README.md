@@ -1,14 +1,67 @@
-## Getting Started
+# Ejemplo para creación de librería
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Creacion de la librería jarfile
+En el directorio del proyecto, ejecuta estos comandos PS
+```bash
+rm bin -r -fo
+rm javaLib.jar 
+mkdir bin
+javac -d bin src\aritmetica\*.java 
+cd bin
+jar cfe javaLib.jar -C *
+move javaLib.jar .. -fo
+cd ..
+rm bin -r -fo
+jar tvf javaLib.jar
+```
 
-## Folder Structure
+Se pued crear automaticamente desde los comandos del proyecto pero automaticamente añade todo los que se encuentra bajo `src` 
 
-The workspace contains two folders by default, where:
+### Plantilla JAVA par JUnit5
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Plantilla para MSCode.
+```java
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
-## Dependency Management
+/* PLANTILLAS DE TESTS
+@Test
+@DisplayName("")
+void test() {
+	fail("Not yet implemented");
+	//assertEquals(0, 0, "Mensaje");
+	//assertAll("Mensaje TODOS",
+	// () -> assertEquals( 0,0, "Mensaje 1"),
+	// () -> assertEquals( 0,0, "Mensaje 2")
+	// );
+}
 
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+@BeforeAll
+static void initAll() {
+}
+
+@BeforeEach
+void init() {
+}
+
+@Test
+@Disabled("este tests no se ejecuta")
+void skippedTest() {
+	// not executed
+}
+
+@AfterEach
+void tearDown() {
+}
+
+@AfterAll
+static void tearDownAll() {
+}
+
+@Nested
+class TestsAgrupados {
+}
+```
