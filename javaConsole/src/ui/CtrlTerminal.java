@@ -20,6 +20,6 @@ public class CtrlTerminal {
         Fraccion f1 = viewTerminal.leerFraccion();
         Fraccion f2 = viewTerminal.leerFraccion();
         Fraccion result = sistema.suma(f1, f2);
-        viewTerminal.mostrarResult(result);
+        viewTerminal.mostrarResultado(result);
     }
 }

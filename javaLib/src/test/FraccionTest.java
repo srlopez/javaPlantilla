@@ -12,8 +12,7 @@ public class FraccionTest {
         // fail("Not yet implemented");
        
         Fraccion f = new Fraccion();
-        assertEquals(0, f.numerador);
-        assertEquals(1, f.denominador);
+        assertEquals("0/1", f.toString());
     }
 
     @Test
@@ -22,8 +21,8 @@ public class FraccionTest {
         // fail("Not yet implemented");
        
         Fraccion f = new Fraccion("3/5");
-        assertEquals(3, f.numerador);
-        assertEquals(5, f.denominador);
+        assertEquals("3/5", f.toString());
+
     }
 
     @Test
@@ -32,7 +31,6 @@ public class FraccionTest {
         // fail("Not yet implemented");
        
         Fraccion f = new Fraccion("aa/bb");
-        assertEquals(0, f.numerador);
-        assertEquals(1, f.denominador);
+        assertEquals("0/1", f.toString());
     }
 }

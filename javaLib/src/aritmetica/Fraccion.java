@@ -1,16 +1,14 @@
 package aritmetica;
 
 public class Fraccion {
-    int numerador;
-    int denominador;
+    int numerador = 0;
+    int denominador = 1;
 
     /**
      * Default constructor. 
      * Fracción nula 0/1
      */
     public Fraccion() {
-        this.numerador = 0;
-        this.denominador = 1;
     }
     
     /**

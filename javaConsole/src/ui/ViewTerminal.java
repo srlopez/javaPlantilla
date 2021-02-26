@@ -18,8 +18,8 @@ public class ViewTerminal {
         return f;
     }
 
-    void mostrarResult(Fraccion result){
+    void mostrarResultado(Fraccion result){
         //System.out.println(result);
-        System.out.println(result.toString());
+        System.out.println("Suma: "+result.toString());
     }
 }
