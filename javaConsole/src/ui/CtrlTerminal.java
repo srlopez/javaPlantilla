@@ -12,7 +12,23 @@ public class CtrlTerminal {
     }
 
     public void run() {
-        useCase1(); // Caso de Uso #1
+        while (true) {
+            char opcion = viewTerminal.mostrarMenu();
+            switch (opcion) {
+                case '1': {
+                    useCase1(); // Caso de Uso #1
+                    break;
+                }
+                case '2': {
+                    useCase2();
+                    break;
+                }               
+                case 'F': {
+                   return;
+                }
+                default:
+            }
+        }
     }
 
     public void useCase1() {
@@ -22,4 +38,7 @@ public class CtrlTerminal {
         Fraccion result = sistema.suma(f1, f2);
         viewTerminal.mostrarResultado(result);
     }
+    public void useCase2() {
+    }
+
 }
