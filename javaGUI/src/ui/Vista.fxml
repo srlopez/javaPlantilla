@@ -124,7 +124,7 @@
                   <Blend />
                </effect>
             </TextField>
-            <TextField fx:id="txtF3Num" alignment="CENTER" depthTest="DISABLE" editable="false" layoutX="410.0" layoutY="48.0" prefHeight="51.0" prefWidth="61.0">
+            <TextField fx:id="txtF3Num" alignment="CENTER" depthTest="DISABLE" editable="false" layoutX="410.0" layoutY="48.0" prefHeight="51.0" prefWidth="61.0" style="-fx-border-color: none; -fx-background-color: transparent;">
                <font>
                   <Font size="24.0" />
                </font>
@@ -133,7 +133,7 @@
                </effect>
             </TextField>
             <Line endX="-27.0" layoutX="503.0" layoutY="104.0" startX="-100.0" />
-            <TextField fx:id="txtF3Den" alignment="CENTER" depthTest="DISABLE" editable="false" layoutX="410.0" layoutY="112.0" prefHeight="51.0" prefWidth="61.0">
+            <TextField fx:id="txtF3Den" alignment="CENTER" depthTest="DISABLE" editable="false" layoutX="410.0" layoutY="112.0" prefHeight="51.0" prefWidth="61.0" style="-fx-border-color: none; -fx-background-color: trnasparent;">
                <font>
                   <Font size="24.0" />
                </font>
@@ -143,7 +143,7 @@
             </TextField>
             <Line endX="-20.0" layoutX="409.0" layoutY="112.0" startX="-61.0" strokeWidth="5.0" />
             <Line endX="-20.0" layoutX="409.0" layoutY="97.0" startX="-61.0" strokeWidth="5.0" />
-            <Label fx:id="lblF1Imprpia" layoutX="179.0" text="*" textFill="RED">
+            <Label fx:id="lblF1Impropia" layoutX="179.0" text="*" textFill="RED">
                <font>
                   <Font size="72.0" />
                </font>

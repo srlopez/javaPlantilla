@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 import ui.Controlador;
 
-public class JavaFX extends Application {
+public class MainJavaFX extends Application {
     public static void main(String[] args) {
         launch(args);
     }
@@ -24,7 +24,7 @@ public class JavaFX extends Application {
             // Controller
             Controlador controller = new Controlador(sistema);
             // Vista
-            String fxmlPath = "C:/Users/santi/source/dev/javaPlantillaMVC/javaGUI/src/ui/Vista.fxml";
+            String fxmlPath = "/ui/Vista.fxml";
             URL location = getClass().getResource(fxmlPath);
             FXMLLoader fxmlLoader = new FXMLLoader(location);
             fxmlLoader.setController(controller);
