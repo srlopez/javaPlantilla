@@ -1,0 +1,10 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "javaLib/javaLib.jar"
+    ],
+    "java.project.sourcePaths": [
+        "javaConsole/src",
+        "javaGUI/src/app"
+    ]
+}

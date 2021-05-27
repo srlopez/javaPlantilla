@@ -3,7 +3,6 @@ package app;
 import aritmetica.*;
 import ui.*;
 
-
 public class Main {
     public static void main(String[] args) throws Exception {
         // MVC en modo ventana
